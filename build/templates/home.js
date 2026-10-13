@@ -7,9 +7,14 @@ function home(catalogStats) {
 '  <div class="container stitch-hero-grid">\n' +
 '    <div class="hero-tech-meta">SYS.REQ // 04.992<br>COORD: 24.7136&deg; N, 46.6753&deg; E</div>\n' +
 '    <div class="stitch-hero-copy">\n' +
-'      <span class="eyebrow ultra-eyebrow">Science. Knowledge. Technology.</span>\n' +
-'      <h1 class="display-hero">From Knowledge to Technology.<br><span class="hero-gradient">From Technology to Industry.</span></h1>\n' +
-'      <p class="lede lede-accent">DIWAN connects engineering knowledge, advanced technologies, and manufacturing capability to develop practical solutions for research, industry, and technical applications in Saudi Arabia.</p>\n' +
+'      <img class="hero-brand-logo" src="assets/img/logo.png" alt="DIWAN — Diwan of Excellence Trading Company">\n' +
+'      <h1 class="path-title">\n' +
+'        <span>Laboratory &amp; Analytical Solutions</span>\n' +
+'        <span>Research &amp; Process Development</span>\n' +
+'        <span>Pilot-Scale Systems</span>\n' +
+'        <span>Industrial Implementation</span>\n' +
+'      </h1>\n' +
+'      <p class="lede lede-accent">DIWAN is a specialized laboratory, research, and engineering solutions company bridging the gap between laboratory research and industrial implementation — from analytical instrumentation and R&amp;D systems to pilot-scale and industrial solutions.</p>\n' +
 '      <div class="hero-actions">\n' +
 '        <a class="btn btn-primary" href="business-arms/engineering-technology.html">Explore Our Business Arms ' + svgIcon('arrow') + '</a>\n' +
 '        <a class="btn btn-ghost-light" href="contact.html">Start a Project with DIWAN</a>\n' +
@@ -76,24 +81,29 @@ function home(catalogStats) {
 '    <div class="section-head reveal">\n' +
 '      <div>\n' +
 '        <span class="eyebrow ultra-eyebrow"><span class="mono-index">02</span><span class="amber-rule"></span>The Journey</span>\n' +
-'        <h2>One Group. Three Connected Stages.</h2>\n' +
+'        <h2>From the Laboratory to Industry</h2>\n' +
 '      </div>\n' +
 '    </div>\n' +
 '    <div class="journey reveal">\n' +
 '      <div class="journey-step">\n' +
 '        <div class="num">1</div>\n' +
-'        <h3>Knowledge &amp; Engineering</h3>\n' +
-'        <p>Research, studies, consulting, process development, technical evaluation, and engineering direction.</p>\n' +
+'        <h3>Laboratory &amp; Analytical Solutions</h3>\n' +
+'        <p>Analytical instrumentation and laboratory systems for research and quality work.</p>\n' +
 '      </div>\n' +
 '      <div class="journey-step">\n' +
 '        <div class="num">2</div>\n' +
-'        <h3>Technology &amp; Solutions</h3>\n' +
-'        <p>Technology selection, equipment supply, system integration, applications support, training, and commercialization.</p>\n' +
+'        <h3>Research &amp; Process Development</h3>\n' +
+'        <p>R&amp;D systems, technical studies, and process development that turn a result into a method.</p>\n' +
 '      </div>\n' +
 '      <div class="journey-step">\n' +
 '        <div class="num">3</div>\n' +
-'        <h3>Manufacturing &amp; Industrialization</h3>\n' +
-'        <p>Materials development, prototyping, manufacturing, product development, technology transfer, and localization.</p>\n' +
+'        <h3>Pilot-Scale Systems</h3>\n' +
+'        <p>Reactors, pilot plants, and scale-up systems that prove the process before industry.</p>\n' +
+'      </div>\n' +
+'      <div class="journey-step">\n' +
+'        <div class="num">4</div>\n' +
+'        <h3>Industrial Implementation</h3>\n' +
+'        <p>Industrial solutions that carry laboratory research into production.</p>\n' +
 '      </div>\n' +
 '    </div>\n' +
 '  </div>\n' +

@@ -45,7 +45,7 @@ write('index.html', layout({
   depth: 0,
   activePath: 'index.html',
   title: 'DIWAN | Saudi Technology, Engineering and Advanced Manufacturing Group',
-  description: 'DIWAN connects engineering knowledge, advanced technologies, and manufacturing capability to create practical research, industrial, and technical solutions in Saudi Arabia.',
+  description: 'DIWAN is a specialized laboratory, research, and engineering solutions company bridging the gap between laboratory research and industrial implementation.',
   body: home({ categories: categoryList.length, products: products.length, countries: totalCountries })
 }));
 

@@ -83,7 +83,7 @@ function layout(opts) {
 '</head>\n' +
 '<body class="theme-dark">\n' +
 '<a class="skip-link" href="#main">Skip to content</a>\n' +
-'<header class="site-header theme-dark">\n' +
+'<header class="site-header theme-light">\n' +
 '  <div class="container">\n' +
 '    <a class="brand" href="' + homeHref + '">\n' +
 '      <span class="brand-logo-wrap"><img class="brand-logo" src="' + href('assets/img/logo.png', depth) + '" alt="DIWAN — Diwan of Excellence Trading Company" width="220" height="56"></span>\n' +
@@ -120,7 +120,7 @@ function renderFooter(depth) {
 '  <div class="container">\n' +
 '    <div class="footer-grid">\n' +
 '      <div class="footer-brand">\n' +
-'        <a class="footer-wordmark" href="' + homeHref + '">DIWAN</a>\n' +
+'        <a class="footer-logo" href="' + homeHref + '"><img src="' + href('assets/img/logo.png', depth) + '" alt="DIWAN — Diwan of Excellence Trading Company"></a>\n' +
 '        <p>Connecting materials development, advanced technologies, manufacturing and engineering consultancy into one integrated value chain.</p>\n' +
 '      </div>\n' +
 '      <div>\n' +
