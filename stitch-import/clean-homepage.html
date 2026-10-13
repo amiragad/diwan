@@ -1,0 +1,681 @@
+<!DOCTYPE html>
+
+<html lang="en" style=""><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>DIWAN - Technology to Industry</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;600;700;800&amp;family=Inter:wght@400;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+  tailwind.config = {
+    darkMode: "class",
+    theme: {
+      extend: {
+        "colors": {
+                "surface-container-highest": "#e0e3e5",
+                "error": "#ba1a1a",
+                "tertiary-fixed": "#d8e3fa",
+                "on-secondary": "#ffffff",
+                "primary-fixed": "#d8e2ff",
+                "on-error-container": "#93000a",
+                "error-container": "#ffdad6",
+                "on-tertiary-container": "#96a1b7",
+                "tertiary": "#172333",
+                "on-background": "#181c1e",
+                "on-secondary-fixed-variant": "#604100",
+                "primary-container": "#1a3668",
+                "primary": "#00204f",
+                "inverse-on-surface": "#eef1f3",
+                "on-tertiary-fixed": "#111c2c",
+                "surface-bright": "#f7fafc",
+                "ink-black": "#0F172A",
+                "secondary-container": "#feb316",
+                "tertiary-fixed-dim": "#bcc7dd",
+                "deep-navy": "#1A3668",
+                "surface-tint": "#445e92",
+                "on-secondary-fixed": "#281900",
+                "surface-dim": "#d7dadc",
+                "inverse-primary": "#aec6ff",
+                "on-tertiary-fixed-variant": "#3c475a",
+                "surface-container": "#ebeef0",
+                "on-primary-fixed-variant": "#2c4678",
+                "on-primary": "#ffffff",
+                "technical-amber": "#F2A900",
+                "slate-gray": "#4A5568",
+                "secondary": "#7f5700",
+                "surface-container-low": "transparent",
+                "on-error": "#ffffff",
+                "background": "transparent",
+                "surface-container-lowest": "#ffffff",
+                "surface": "#f7fafc",
+                "inverse-surface": "#2d3133",
+                "on-secondary-container": "#6a4800",
+                "primary-fixed-dim": "#aec6ff",
+                "on-surface-variant": "#44474f",
+                "on-primary-container": "#87a0d9",
+                "secondary-fixed": "#ffdead",
+                "on-primary-fixed": "#001a42",
+                "on-surface": "#181c1e",
+                "outline": "#747780",
+                "on-tertiary": "#ffffff",
+                "outline-variant": "#c4c6d0",
+                "surface-variant": "#e0e3e5",
+                "surface-container-high": "#e5e9eb",
+                "tertiary-container": "#2d384a",
+                "blueprint-grid": "rgba(26, 54, 104, 0.05)",
+                "secondary-fixed-dim": "#ffba3b"
+        },
+        "borderRadius": {
+                "DEFAULT": "0.125rem",
+                "lg": "0.25rem",
+                "xl": "0.5rem",
+                "full": "0.75rem"
+        },
+        "spacing": {
+                "base": "8px",
+                "gutter": "24px",
+                "max-width-desktop": "1280px",
+                "margin-container": "auto",
+                "section-gap-sm": "64px",
+                "section-gap-lg": "120px"
+        },
+        "fontFamily": {
+                "stats-display": [
+                        "Hanken Grotesk"
+                ],
+                "body-md": [
+                        "Inter"
+                ],
+                "label-caps": [
+                        "Inter"
+                ],
+                "headline-md": [
+                        "Hanken Grotesk"
+                ],
+                "headline-lg-mobile": [
+                        "Hanken Grotesk"
+                ],
+                "body-lg": [
+                        "Inter"
+                ],
+                "headline-sm": [
+                        "Hanken Grotesk"
+                ],
+                "headline-lg": [
+                        "Hanken Grotesk"
+                ],
+                "display-hero": [
+                        "Hanken Grotesk"
+                ]
+        },
+        "fontSize": {
+                "stats-display": [
+                        "56px",
+                        {
+                                "lineHeight": "1",
+                                "letterSpacing": "-0.03em",
+                                "fontWeight": "800"
+                        }
+                ],
+                "body-md": [
+                        "16px",
+                        {
+                                "lineHeight": "26px",
+                                "fontWeight": "400"
+                        }
+                ],
+                "label-caps": [
+                        "12px",
+                        {
+                                "lineHeight": "16px",
+                                "letterSpacing": "0.1em",
+                                "fontWeight": "700"
+                        }
+                ],
+                "headline-md": [
+                        "32px",
+                        {
+                                "lineHeight": "40px",
+                                "fontWeight": "600"
+                        }
+                ],
+                "headline-lg-mobile": [
+                        "32px",
+                        {
+                                "lineHeight": "40px",
+                                "fontWeight": "700"
+                        }
+                ],
+                "body-lg": [
+                        "18px",
+                        {
+                                "lineHeight": "30px",
+                                "fontWeight": "400"
+                        }
+                ],
+                "headline-sm": [
+                        "24px",
+                        {
+                                "lineHeight": "32px",
+                                "fontWeight": "600"
+                        }
+                ],
+                "headline-lg": [
+                        "48px",
+                        {
+                                "lineHeight": "56px",
+                                "letterSpacing": "-0.01em",
+                                "fontWeight": "700"
+                        }
+                ],
+                "display-hero": [
+                        "72px",
+                        {
+                                "lineHeight": "80px",
+                                "letterSpacing": "-0.02em",
+                                "fontWeight": "800"
+                        }
+                ]
+        },
+        animation: {
+            'fade-in-up': 'fadeInUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards',
+            'typewriter': 'typing 2s steps(40, end)',
+            'blink': 'blink-caret .75s step-end infinite',
+        },
+        keyframes: {
+            fadeInUp: {
+                '0%': { opacity: '0', transform: 'translateY(20px)' },
+                '100%': { opacity: '1', transform: 'translateY(0)' },
+            },
+            typing: {
+              from: { width: '0' },
+              to: { width: '100%' }
+            },
+            'blink-caret': {
+              'from, to': { borderColor: 'transparent' },
+              '50%': { borderColor: 'currentColor' }
+            }
+        }
+    },
+    },
+  }
+</script>
+<style>
+        .blueprint-bg {
+            /* Removed background gradient, using WebGL instead */
+        }
+        
+        /* Reveal Animations */
+        .reveal {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+        .reveal.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        
+        @media (prefers-reduced-motion: reduce) {
+            .reveal, .animate-fade-in-up, .typing-container {
+                animation: none !important;
+                transition: none !important;
+                opacity: 1 !important;
+                transform: none !important;
+            }
+        }
+        
+        /* Typing effect container */
+        .typing-container {
+            display: inline-block;
+            overflow: hidden;
+            white-space: nowrap;
+            border-right: 2px solid transparent;
+            animation: typewriter 2s steps(40, end) forwards;
+        }
+
+        /* Magnetic button wrapper */
+        .magnetic-wrap {
+            display: inline-block;
+            position: relative;
+        }
+        
+        /* Parallax image */
+        .parallax-image {
+            will-change: transform;
+        }
+        
+        /* Glassmorphism Classes */
+        .glass-panel {
+            background: rgba(255, 255, 255, 0.7);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border: 1px solid rgba(255, 255, 255, 0.4);
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.05), inset 0 0 20px rgba(255,255,255,0.2);
+        }
+        
+        .dark .glass-panel {
+            background: rgba(26, 54, 104, 0.6);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2), inset 0 0 20px rgba(255,255,255,0.05);
+        }
+
+        /* Card Hover Effects */
+        .bento-card {
+            transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.4s ease, border-color 0.4s ease;
+        }
+        .bento-card:hover {
+            transform: translateY(-4px) scale(1.01);
+            box-shadow: 0 20px 40px -10px rgba(0,0,0,0.1), 0 0 20px rgba(242, 169, 0, 0.15);
+        }
+        .bento-card:hover .amber-accent {
+            filter: brightness(1.2);
+            text-shadow: 0 0 8px rgba(242, 169, 0, 0.4);
+        }
+        
+        /* Tech Overlay Gradients */
+        .tech-gradient {
+            background: linear-gradient(135deg, rgba(26,54,104,0.9) 0%, rgba(15,23,42,0.95) 100%);
+        }
+    </style>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+</head>
+<body class="bg-background text-on-background font-body-md overflow-x-hidden">
+<!-- WebGL Background -->
+<!-- Top Navigation Bar -->
+<nav class="glass-panel text-deep-navy dark:text-primary-fixed font-label-caps text-label-caps uppercase tracking-widest fixed top-0 w-full z-50 border-b-0 rounded-none">
+<div class="flex justify-between items-center h-20 px-gutter max-w-max-width-desktop mx-auto">
+<div class="flex items-center gap-4">
+<img alt="DIWAN Logo" class="h-8" src="https://lh3.googleusercontent.com/aida/AEtjO1XqYGsw3Le-ZQ-n1yvZZQ5PrIc-wI5HjNm3EFK1eNDNSdEuk2IL2Fu20Sus28AgJ9ubYMLhR8RiOI643r7FoA5EvBt9j_UYSHAXmpdXwDp_u5OzEHTXfVt-jddyLxpT1d7KLxwWiO8Dx-vuNjn3TIOWYOuGiuwHcdTj7g7fEcxhie8Tm9IEcqU0ZevnWNvOzRtFWGIMkPlt2B66fYpH2ZEVGycd8t3zCQDSYCzlRPQVsNvXUq56kMm6DQ"/>
+</div>
+<div class="hidden md:flex items-center gap-8">
+<a class="text-deep-navy dark:text-inverse-on-surface hover:text-technical-amber transition-colors active:opacity-80 transition-opacity" href="#">Business Arms</a>
+<a class="text-deep-navy dark:text-inverse-on-surface hover:text-technical-amber transition-colors active:opacity-80 transition-opacity" href="#">Technology Domains</a>
+<a class="text-deep-navy dark:text-inverse-on-surface hover:text-technical-amber transition-colors active:opacity-80 transition-opacity" href="#">The Journey</a>
+<a class="text-deep-navy dark:text-inverse-on-surface hover:text-technical-amber transition-colors active:opacity-80 transition-opacity" href="#">Consultations</a>
+<a class="text-deep-navy dark:text-inverse-on-surface hover:text-technical-amber transition-colors active:opacity-80 transition-opacity" href="#">About Us</a>
+</div>
+<div class="flex items-center gap-4">
+<div class="magnetic-wrap">
+<a class="hidden md:inline-flex items-center justify-center bg-technical-amber text-ink-black px-6 py-3 rounded hover:bg-secondary-container transition-transform duration-300 font-label-caps text-label-caps uppercase tracking-widest font-bold magnetic-btn shadow-md hover:shadow-lg hover:shadow-technical-amber/20" href="#">Start a Project</a>
+</div>
+<button class="md:hidden flex items-center justify-center p-2 text-deep-navy">
+<span class="material-symbols-outlined" data-icon="menu">menu</span>
+</button>
+</div>
+</div>
+</nav>
+<!-- Hero Section -->
+<section class="pt-32 pb-section-gap-lg px-gutter max-w-max-width-desktop mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12 items-center min-h-[85vh] relative">
+<!-- Tech Accents -->
+<div class="absolute top-40 left-8 text-xs font-mono text-slate-gray/40 hidden xl:block">
+        SYS.REQ // 04.992<br/>
+        COORD: 24.7136° N, 46.6753° E
+    </div>
+<div class="absolute bottom-20 right-8 text-xs font-mono text-slate-gray/40 hidden xl:flex items-center gap-2">
+<span class="w-2 h-2 rounded-full bg-technical-amber animate-pulse"></span>
+        STATUS: ONLINE
+    </div>
+<div class="lg:col-span-6 space-y-8 z-10">
+<div>
+<p class="font-label-caps text-label-caps text-technical-amber uppercase tracking-widest font-bold typing-container mb-4 flex items-center gap-2">
+<span class="material-symbols-outlined text-sm">memory</span>
+                Science. Knowledge. Technology.
+            </p>
+<h1 class="font-display-hero text-display-hero text-deep-navy font-extrabold animate-fade-in-up leading-tight" style="animation-delay: 0.2s;">
+                From Knowledge to Technology. <br/>
+<span class="text-transparent bg-clip-text bg-gradient-to-r from-deep-navy to-slate-gray">From Technology to Industry.</span>
+</h1>
+</div>
+<p class="font-body-lg text-body-lg text-slate-gray max-w-2xl animate-fade-in-up border-l-2 border-technical-amber/30 pl-4 py-1" style="animation-delay: 0.4s;">DIWAN connects engineering knowledge, advanced technologies, and manufacturing capability to develop practical solutions for research, industry, and technical applications in Saudi Arabia.</p>
+<div class="flex flex-wrap gap-4 pt-4 animate-fade-in-up" style="animation-delay: 0.6s;">
+<div class="magnetic-wrap">
+<a class="inline-flex items-center justify-center bg-technical-amber text-ink-black px-8 py-4 rounded hover:bg-secondary-container transition-transform duration-300 font-label-caps text-label-caps uppercase tracking-widest font-bold magnetic-btn shadow-lg hover:shadow-xl hover:shadow-technical-amber/30" href="#">
+                    Explore Our Business Arms
+                    <span class="material-symbols-outlined ml-2 text-sm">arrow_forward</span>
+</a>
+</div>
+<div class="magnetic-wrap">
+<a class="inline-flex items-center justify-center glass-panel text-deep-navy px-8 py-4 rounded hover:bg-surface-variant transition-colors font-label-caps text-label-caps uppercase tracking-widest font-bold magnetic-btn" href="#">Start a Project with DIWAN</a>
+</div>
+</div>
+</div>
+<div class="lg:col-span-6 relative h-[600px] mt-8 lg:mt-0 animate-fade-in-up rounded-2xl p-4 glass-panel" style="animation-delay: 0.3s;">
+<div class="absolute inset-4 rounded-xl overflow-hidden shadow-inner">
+<img class="absolute inset-0 w-full h-full object-cover mix-blend-overlay opacity-90 parallax-image scale-105" data-alt="A highly detailed and professional photograph of a modern, brightly lit laboratory setting featuring stainless steel industrial reactors and complex glass tubing setups. The mood is precise, clinical, and technologically advanced, reflecting high-end chemical engineering. Soft, diffuse white lighting highlights the reflective surfaces of the equipment. A technician in a pristine white lab coat and blue gloves is partially visible, operating a digital control panel." src="https://lh3.googleusercontent.com/aida/AEtjO1V5Ol8dESe0Q5fh2MFHU4_-qkkcJiYHZYAQOTMIQLdVDliVNicJHfSUm0HvzOUSo34kkfU0DonKTG6zb3maXu40MsJaShbzSoOIF71XhHKKATDb2K7H-FBiBxWqo24q9S9A05pVVkufvExcjSyJlA1WqTYXFTTX7ZKvnPZVCNJrapkY-w4CmwQlBEycHLr4THR6acZC3AKi_MnjAormeuxXscUpBIvrFdoHs2Rav6XP-MtLOV2omN9Ixw"/>
+<div class="absolute inset-0 bg-gradient-to-t from-deep-navy/40 to-transparent"></div>
+</div>
+<!-- Floating Stats Card -->
+<div class="absolute -bottom-6 -left-6 glass-panel p-8 rounded-xl shadow-2xl hidden md:block">
+<div class="flex gap-12">
+<div class="relative">
+<p class="font-stats-display text-stats-display text-deep-navy font-semibold counter bg-clip-text text-transparent bg-gradient-to-br from-deep-navy to-slate-gray" data-target="3">0</p>
+<p class="font-label-caps text-label-caps text-slate-gray mt-2 font-bold tracking-widest">Integrated Arms</p>
+<div class="absolute -right-6 top-1/2 -translate-y-1/2 w-[1px] h-12 bg-slate-gray/20"></div>
+</div>
+<div>
+<p class="font-stats-display text-stats-display text-technical-amber font-semibold drop-shadow-md"><span class="counter" data-target="81">0</span>+</p>
+<p class="font-label-caps text-label-caps text-slate-gray mt-2 font-bold tracking-widest">Tech Categories</p>
+</div>
+</div>
+</div>
+<!-- Decorational Corner Markers -->
+<div class="absolute top-4 left-4 w-4 h-4 border-t-2 border-l-2 border-technical-amber/50 z-20"></div>
+<div class="absolute top-4 right-4 w-4 h-4 border-t-2 border-r-2 border-technical-amber/50 z-20"></div>
+<div class="absolute bottom-4 right-4 w-4 h-4 border-b-2 border-r-2 border-technical-amber/50 z-20"></div>
+</div>
+</section>
+<!-- Business Arms Section (Bento Grid) -->
+<section class="py-section-gap-lg px-gutter relative z-10">
+<div class="max-w-max-width-desktop mx-auto">
+<div class="mb-16 reveal flex flex-col md:flex-row md:items-end justify-between gap-8 border-b border-slate-gray/20 pb-8">
+<div>
+<p class="font-label-caps text-label-caps text-technical-amber uppercase tracking-widest mb-4 font-bold flex items-center gap-2">
+<span class="text-slate-gray/40 font-mono">01</span>
+<span class="w-8 h-[1px] bg-technical-amber"></span>
+                    One Group
+                </p>
+<h2 class="font-headline-lg text-headline-lg text-deep-navy font-extrabold">One Integrated Saudi<br/>Technology Ecosystem</h2>
+</div>
+<p class="font-body-lg text-body-lg text-slate-gray max-w-xl border-l-2 border-slate-gray/20 pl-6 py-2">DIWAN supports the full journey from an initial idea and engineering study to technology selection, implementation, manufacturing, and localization.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-12 gap-6 auto-rows-[320px]">
+<!-- Arm 1: Engineering & Tech -->
+<div class="md:col-span-7 tech-gradient rounded-xl p-10 flex flex-col justify-between group relative overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-500 bento-card reveal text-on-primary" style="transition-delay: 0.1s;">
+<div class="absolute inset-0 bg-cover bg-center opacity-20 mix-blend-overlay transition-opacity duration-500 group-hover:opacity-30" style="background-image: url('https://lh3.googleusercontent.com/aida/AEtjO1WfCgUtaPhZcdZA_UWdIFHQZ4AjLXF5GEIqbvY-Z7zFjyp0wj030rRhq0OhJ9f3bEX3X4sFuS0OKENJm27mcQESHK1DfyX4qsQlNr9XmymETBy2ZLoSwsxz-TegoKiF7nFXShhPzwLwRbzcjowCBkec7X5XCG-fGSulNF9RfYKG4Ss62qUfo6Eryg3ru9t41kAm0W4Q7ZoGVqtAEDKCYOB4AEiZGr4p29NTlfAaOk4Ah5H5_9cf59gNcj8');"></div>
+<div class="absolute inset-0 bg-gradient-to-t from-ink-black/80 via-transparent to-transparent"></div>
+<div class="absolute top-0 right-0 w-64 h-64 bg-technical-amber/10 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2 group-hover:bg-technical-amber/20 transition-colors duration-500"></div>
+<div class="relative z-10">
+<div class="flex items-center gap-3 mb-4">
+<span class="material-symbols-outlined text-technical-amber">precision_manufacturing</span>
+<p class="font-label-caps text-label-caps text-surface-variant uppercase tracking-widest font-bold">Commercial &amp; Technology Arm</p>
+</div>
+<h3 class="font-headline-md text-headline-md mb-4 text-white">DIWAN Engineering &amp; Technology Company</h3>
+<p class="font-body-md text-body-md text-surface-variant/80 max-w-xl">Provides advanced technologies, equipment, specialized systems, integration, applications support, training, and commercialization for laboratories, research and development, and industrial applications.</p>
+</div>
+<div class="relative z-10 mt-auto flex justify-between items-end">
+<a class="inline-flex items-center gap-2 font-label-caps text-label-caps text-technical-amber uppercase tracking-widest hover:text-white transition-colors group-hover:underline underline-offset-4 font-bold amber-accent bg-ink-black/40 px-6 py-3 rounded backdrop-blur-sm border border-technical-amber/20 hover:bg-technical-amber/10" href="#">
+                            View this arm
+                            <span class="material-symbols-outlined text-sm transition-transform group-hover:translate-x-1" data-icon="arrow_forward">arrow_forward</span>
+</a>
+<div class="w-12 h-12 rounded-full border border-surface-variant/20 flex items-center justify-center text-surface-variant/50 group-hover:border-technical-amber/50 group-hover:text-technical-amber transition-colors">
+<span class="material-symbols-outlined">north_east</span>
+</div>
+</div>
+</div>
+<!-- Arm 2: Composites -->
+<div class="md:col-span-5 glass-panel text-deep-navy rounded-xl p-10 flex flex-col justify-between relative overflow-hidden shadow-lg border-t-4 border-t-technical-amber bento-card reveal group" style="transition-delay: 0.2s;">
+<div class="absolute inset-0 bg-cover bg-center opacity-[0.03] mix-blend-multiply group-hover:opacity-[0.05] transition-opacity duration-500" style="background-image: url('https://lh3.googleusercontent.com/aida/AEtjO1Umzvoei1twAKQvN0oisatqD082QR5IBvBAdJkVUmdBuVLYZ1wHvXa4qzAiyZrjLgvp-UF9IeA35C2oerM_FFb8JQCLdGowYnPHIbPPoNHuAuTYW94CEsRQCr48o1QyXWJ1UZbQZaD8GpZhCL00LAVpMPMRl2wtMWR2xJv9kdsWdIqNUY6rR4HV5xK3c3NAjT5o1E_G8nW4Zw_I2aK6KmyXKTorS0WMwRZPV4M0ncnIR-W6vqaDCmyCS5k');"></div>
+<div class="relative z-10">
+<div class="flex items-center gap-3 mb-4">
+<span class="material-symbols-outlined text-slate-gray">layers</span>
+<p class="font-label-caps text-label-caps text-slate-gray uppercase tracking-widest font-bold">Industrial &amp; Manufacturing Arm</p>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-deep-navy mb-4">Saudi Advanced Composites</h3>
+<p class="font-body-md text-body-md text-slate-gray">Develops advanced materials, engineering products, prototypes, components, manufacturing processes, and localized industrial capabilities in Saudi Arabia.</p>
+</div>
+<div class="relative z-10 mt-6 group">
+<a class="inline-flex items-center gap-2 font-label-caps text-label-caps text-technical-amber uppercase tracking-widest hover:text-deep-navy transition-colors font-bold amber-accent" href="#">
+                            View this arm
+                            <span class="material-symbols-outlined text-sm transition-transform group-hover:translate-x-1" data-icon="arrow_forward">arrow_forward</span>
+</a>
+</div>
+</div>
+<!-- Arm 3: Consultations -->
+<div class="md:col-span-12 glass-panel rounded-xl p-10 flex flex-col md:flex-row gap-12 items-start md:items-center justify-between group shadow-lg relative overflow-hidden bento-card reveal" style="transition-delay: 0.3s;">
+<div class="absolute inset-0 bg-cover bg-center opacity-[0.02] mix-blend-multiply group-hover:opacity-[0.04] transition-opacity duration-500" style="background-image: url('https://lh3.googleusercontent.com/aida/AEtjO1XUSQrFipaqNRsIC-B_LSaRcRy34PJg2E9n8DWULhQ7MVlVvYe0MVKHoUOZIGOCXBYatbiOh04bGGwsuuwFcccgvFKdF2R2rDtGMVaPbIFAWFl533HXutRgTdgx1dzCHgQ3GYWO_Qr9m_KaVGqwata_ITodv4B3kk9KekZCtLy6ePdlmjEb691BGqF-jgnRvq0qsNpY3reewjFnUBc7FKXLOxtH0QnavHBiFnW0ZhxUYHRIvDcQ_walObw');"></div>
+<div class="absolute left-0 top-0 bottom-0 w-1 bg-gradient-to-b from-slate-gray/10 via-slate-gray/30 to-slate-gray/10"></div>
+<div class="md:w-2/3 relative z-10 pl-6">
+<div class="flex items-center gap-3 mb-4">
+<span class="material-symbols-outlined text-slate-gray">engineering</span>
+<p class="font-label-caps text-label-caps text-slate-gray uppercase tracking-widest font-bold">Engineering &amp; Consulting Arm</p>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-deep-navy mb-4">Diwan of Excellence Engineering Consultations</h3>
+<p class="font-body-md text-body-md text-slate-gray">Provides chemical engineering, materials consulting, technical studies, process development, feasibility work, technical evaluation, and engineering support for research and industrial projects.</p>
+</div>
+<div class="relative z-10 pr-6">
+<a class="inline-flex items-center justify-center border border-deep-navy/30 bg-surface/50 text-deep-navy px-8 py-4 rounded hover:bg-deep-navy hover:text-on-primary hover:border-deep-navy transition-all duration-300 font-label-caps text-label-caps uppercase tracking-widest whitespace-nowrap font-bold shadow-sm" href="#">
+                            View this arm
+                        </a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="bg-deep-navy dark:bg-tertiary-container text-on-primary dark:text-on-tertiary-container font-body-md text-body-md w-full mt-section-gap-lg border-t border-slate-gray/20 relative z-10">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-8 py-section-gap-sm px-gutter max-w-max-width-desktop mx-auto">
+<div class="col-span-1 md:col-span-2">
+<h2 class="font-headline-sm text-headline-sm text-technical-amber mb-4">DIWAN</h2>
+<p class="text-surface-variant max-w-md">Connecting materials development, advanced technologies, manufacturing and engineering consultancy into one integrated value chain.</p>
+</div>
+<div>
+<h4 class="font-label-caps text-label-caps text-surface-variant uppercase tracking-widest mb-4">Business Arms</h4>
+<ul class="space-y-2">
+<li class=""><a class="text-surface-variant dark:text-tertiary-fixed-dim hover:text-technical-amber transition-all duration-300 underline-offset-4 hover:underline" href="#">Engineering &amp; Tech</a></li>
+<li class=""><a class="text-surface-variant dark:text-tertiary-fixed-dim hover:text-technical-amber transition-all duration-300 underline-offset-4 hover:underline" href="#">Advanced Composites</a></li>
+<li class=""><a class="text-surface-variant dark:text-tertiary-fixed-dim hover:text-technical-amber transition-all duration-300 underline-offset-4 hover:underline" href="#">Consultations</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-label-caps text-label-caps text-surface-variant uppercase tracking-widest mb-4">Group Info</h4>
+<ul class="space-y-2">
+<li class=""><a class="text-surface-variant dark:text-tertiary-fixed-dim hover:text-technical-amber transition-all duration-300 underline-offset-4 hover:underline" href="#">Contact Us</a></li>
+<li class=""><a class="text-surface-variant dark:text-tertiary-fixed-dim hover:text-technical-amber transition-all duration-300 underline-offset-4 hover:underline" href="#">Privacy Policy</a></li>
+<li class=""><a class="text-surface-variant dark:text-tertiary-fixed-dim hover:text-technical-amber transition-all duration-300 underline-offset-4 hover:underline" href="#">Careers</a></li>
+</ul>
+</div>
+</div>
+<div class="border-t border-slate-gray/20 py-6 px-gutter text-center text-sm text-surface-variant/60">
+            © 2024 DIWAN Group. All rights reserved. Precision Engineering for Saudi Vision 2030.
+        </div>
+</footer>
+<script>
+    // 1. WebGL Background Setup (Enhanced)
+    const initWebGL = () => {
+        const container = document.getElementById('webgl-container');
+        if (!container || window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+
+        const scene = new THREE.Scene();
+        const camera = new THREE.OrthographicCamera(-1, 1, 1, -1, 0, 1);
+        const renderer = new THREE.WebGLRenderer({ alpha: true, antialias: true });
+        
+        renderer.setSize(window.innerWidth, window.innerHeight);
+        container.appendChild(renderer.domElement);
+
+        const fragmentShader = `
+precision highp float;
+uniform float u_time;
+uniform vec2 u_resolution;
+varying vec2 v_texCoord;
+
+// Pseudo-random noise for micro-details
+float hash(vec2 p) {
+    return fract(sin(dot(p, vec2(12.9898, 78.233))) * 43758.5453);
+}
+
+void main() {
+    vec2 uv = v_texCoord;
+    vec2 pos = uv * u_resolution.xy / 80.0; // Scaled for grid density
+    
+    // Main grid
+    vec2 grid = fract(pos - 0.5);
+    float lineX = smoothstep(0.0, 0.015, grid.x) * smoothstep(1.0, 0.985, grid.x);
+    float lineY = smoothstep(0.0, 0.015, grid.y) * smoothstep(1.0, 0.985, grid.y);
+    float line = lineX * lineY;
+    
+    // Sub-grid
+    vec2 subgrid = fract(pos * 5.0 - 0.5);
+    float sublineX = smoothstep(0.0, 0.02, subgrid.x) * smoothstep(1.0, 0.98, subgrid.x);
+    float sublineY = smoothstep(0.0, 0.02, subgrid.y) * smoothstep(1.0, 0.98, subgrid.y);
+    float subline = sublineX * sublineY;
+    
+    // Coordinate markers (crosshairs at intersections)
+    vec2 gridPos = floor(pos - 0.5);
+    float crosshair = 0.0;
+    if (mod(gridPos.x, 2.0) == 0.0 && mod(gridPos.y, 2.0) == 0.0) {
+        vec2 local = fract(pos - 0.5) - 0.5;
+        if (abs(local.x) < 0.1 && abs(local.y) < 0.01) crosshair = 1.0;
+        if (abs(local.y) < 0.1 && abs(local.x) < 0.01) crosshair = 1.0;
+    }
+    
+    // Base surface color
+    vec3 color = vec3(0.96, 0.97, 0.98); 
+    
+    // Grid colors
+    vec3 gridColor = vec3(0.1, 0.2, 0.4); // Deep navy tint
+    color = mix(gridColor, color, line);
+    color = mix(gridColor * 0.4, color, subline * 0.97);
+    
+    // Add crosshairs
+    color = mix(vec3(0.95, 0.66, 0.0), color, 1.0 - (crosshair * 0.5)); // Amber tint
+    
+    // Tech pulse
+    float pulse = sin(u_time * 0.3 - length(pos)*0.1) * 0.5 + 0.5;
+    float glow = smoothstep(0.9, 0.0, length(uv - vec2(0.8, 0.2)));
+    color += vec3(0.95, 0.66, 0.0) * glow * pulse * 0.03;
+    
+    // Static noise for texture
+    color -= hash(uv * u_time) * 0.015;
+
+    gl_FragColor = vec4(color, 1.0);
+}
+        `;
+
+        const vertexShader = `
+varying vec2 v_texCoord;
+void main() {
+    v_texCoord = uv;
+    gl_Position = vec4(position, 1.0);
+}
+        `;
+
+        const uniforms = {
+            u_time: { value: 0.0 },
+            u_resolution: { value: new THREE.Vector2(window.innerWidth, window.innerHeight) }
+        };
+
+        const material = new THREE.ShaderMaterial({
+            vertexShader,
+            fragmentShader,
+            uniforms
+        });
+
+        const geometry = new THREE.PlaneGeometry(2, 2);
+        const mesh = new THREE.Mesh(geometry, material);
+        scene.add(mesh);
+
+        let animationFrameId;
+        const startTime = Date.now();
+
+        const animate = () => {
+            animationFrameId = requestAnimationFrame(animate);
+            uniforms.u_time.value = (Date.now() - startTime) * 0.001;
+            renderer.render(scene, camera);
+        };
+
+        animate();
+
+        window.addEventListener('resize', () => {
+            renderer.setSize(window.innerWidth, window.innerHeight);
+            uniforms.u_resolution.value.set(window.innerWidth, window.innerHeight);
+        });
+    };
+
+    // 2. Scroll Reveal Animations
+    const initScrollReveal = () => {
+        const reveals = document.querySelectorAll('.reveal');
+        
+        const revealObserver = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('active');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
+
+        reveals.forEach(reveal => revealObserver.observe(reveal));
+    };
+
+    // 3. Counter Animation
+    const initCounters = () => {
+        const counters = document.querySelectorAll('.counter');
+        
+        const animateValue = (obj, start, end, duration) => {
+            let startTimestamp = null;
+            const step = (timestamp) => {
+                if (!startTimestamp) startTimestamp = timestamp;
+                const progress = Math.min((timestamp - startTimestamp) / duration, 1);
+                // easeOutQuad
+                const easeProgress = progress * (2 - progress);
+                obj.innerHTML = Math.floor(easeProgress * (end - start) + start);
+                if (progress < 1) {
+                    window.requestAnimationFrame(step);
+                } else {
+                    obj.innerHTML = end;
+                }
+            };
+            window.requestAnimationFrame(step);
+        }
+
+        const counterObserver = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const target = parseInt(entry.target.getAttribute('data-target'));
+                    animateValue(entry.target, 0, target, 2000);
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.5 });
+
+        counters.forEach(counter => counterObserver.observe(counter));
+    };
+
+    // 4. Parallax and Magnetic Effects
+    const initInteractivity = () => {
+        if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+
+        // Parallax
+        const parallaxImg = document.querySelector('.parallax-image');
+        window.addEventListener('scroll', () => {
+            if(parallaxImg) {
+                const scrolled = window.scrollY;
+                parallaxImg.style.transform = `translateY(${scrolled * 0.15}px) scale(1.05)`;
+            }
+        });
+
+        // Magnetic Buttons
+        const magneticBtns = document.querySelectorAll('.magnetic-btn');
+        
+        magneticBtns.forEach(btn => {
+            btn.addEventListener('mousemove', (e) => {
+                const rect = btn.getBoundingClientRect();
+                const x = e.clientX - rect.left - rect.width / 2;
+                const y = e.clientY - rect.top - rect.height / 2;
+                
+                // Springier movement
+                btn.style.transform = `translate(${x * 0.3}px, ${y * 0.3}px)`;
+            });
+
+            btn.addEventListener('mouseleave', () => {
+                // Smooth return
+                btn.style.transform = 'translate(0px, 0px)';
+                btn.style.transition = 'transform 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275)';
+                setTimeout(() => {
+                    btn.style.transition = 'transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease';
+                }, 500);
+            });
+        });
+    };
+
+    // Initialize all
+    document.addEventListener('DOMContentLoaded', () => {
+        initWebGL();
+        initScrollReveal();
+        initCounters();
+        initInteractivity();
+    });
+</script>
+</body></html>

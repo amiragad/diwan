@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>DIWAN - Technology to Industry</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;600;700;800&amp;family=Inter:wght@400;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                            "technical-amber": "#F2A900",
+                            "inverse-on-surface": "#eef1f3",
+                            "error-container": "#ffdad6",
+                            "primary": "#00204f",
+                            "on-secondary": "#ffffff",
+                            "tertiary-fixed-dim": "#bcc7dd",
+                            "on-primary-container": "#87a0d9",
+                            "surface": "#f7fafc",
+                            "surface-tint": "#445e92",
+                            "on-surface": "#181c1e",
+                            "ink-black": "#0F172A",
+                            "error": "#ba1a1a",
+                            "outline-variant": "#c4c6d0",
+                            "tertiary": "#172333",
+                            "surface-container": "#ebeef0",
+                            "deep-navy": "#1A3668",
+                            "primary-fixed-dim": "#aec6ff",
+                            "secondary-container": "#feb316",
+                            "on-error-container": "#93000a",
+                            "outline": "#747780",
+                            "secondary-fixed-dim": "#ffba3b",
+                            "primary-fixed": "#d8e2ff",
+                            "on-secondary-fixed": "#281900",
+                            "background": "#f7fafc",
+                            "surface-container-lowest": "#ffffff",
+                            "secondary-fixed": "#ffdead",
+                            "on-tertiary-fixed-variant": "#3c475a",
+                            "surface-container-low": "#f1f4f6",
+                            "on-tertiary-container": "#96a1b7",
+                            "surface-bright": "#f7fafc",
+                            "surface-variant": "#e0e3e5",
+                            "on-secondary-container": "#6a4800",
+                            "inverse-primary": "#aec6ff",
+                            "inverse-surface": "#2d3133",
+                            "on-tertiary": "#ffffff",
+                            "blueprint-grid": "rgba(26, 54, 104, 0.05)",
+                            "on-background": "#181c1e",
+                            "on-surface-variant": "#44474f",
+                            "tertiary-container": "#2d384a",
+                            "on-primary": "#ffffff",
+                            "on-tertiary-fixed": "#111c2c",
+                            "on-secondary-fixed-variant": "#604100",
+                            "on-primary-fixed": "#001a42",
+                            "secondary": "#7f5700",
+                            "surface-dim": "#d7dadc",
+                            "surface-container-high": "#e5e9eb",
+                            "surface-container-highest": "#e0e3e5",
+                            "slate-gray": "#4A5568",
+                            "on-primary-fixed-variant": "#2c4678",
+                            "primary-container": "#1a3668",
+                            "tertiary-fixed": "#d8e3fa",
+                            "on-error": "#ffffff"
+                    },
+                    "borderRadius": {
+                            "DEFAULT": "0.125rem",
+                            "lg": "0.25rem",
+                            "xl": "0.5rem",
+                            "full": "0.75rem"
+                    },
+                    "spacing": {
+                            "section-gap-sm": "64px",
+                            "base": "8px",
+                            "max-width-desktop": "1280px",
+                            "gutter": "24px",
+                            "section-gap-lg": "120px",
+                            "margin-container": "auto"
+                    },
+                    "fontFamily": {
+                            "headline-md": [
+                                    "Hanken Grotesk"
+                            ],
+                            "label-caps": [
+                                    "Inter"
+                            ],
+                            "body-lg": [
+                                    "Inter"
+                            ],
+                            "headline-lg-mobile": [
+                                    "Hanken Grotesk"
+                            ],
+                            "stats-display": [
+                                    "Hanken Grotesk"
+                            ],
+                            "headline-sm": [
+                                    "Hanken Grotesk"
+                            ],
+                            "body-md": [
+                                    "Inter"
+                            ],
+                            "headline-lg": [
+                                    "Hanken Grotesk"
+                            ],
+                            "display-hero": [
+                                    "Hanken Grotesk"
+                            ]
+                    },
+                    "fontSize": {
+                            "headline-md": [
+                                    "32px",
+                                    {
+                                            "lineHeight": "40px",
+                                            "fontWeight": "600"
+                                    }
+                            ],
+                            "label-caps": [
+                                    "12px",
+                                    {
+                                            "lineHeight": "16px",
+                                            "letterSpacing": "0.1em",
+                                            "fontWeight": "700"
+                                    }
+                            ],
+                            "body-lg": [
+                                    "18px",
+                                    {
+                                            "lineHeight": "30px",
+                                            "fontWeight": "400"
+                                    }
+                            ],
+                            "headline-lg-mobile": [
+                                    "32px",
+                                    {
+                                            "lineHeight": "40px",
+                                            "fontWeight": "700"
+                                    }
+                            ],
+                            "stats-display": [
+                                    "56px",
+                                    {
+                                            "lineHeight": "1",
+                                            "letterSpacing": "-0.03em",
+                                            "fontWeight": "800"
+                                    }
+                            ],
+                            "headline-sm": [
+                                    "24px",
+                                    {
+                                            "lineHeight": "32px",
+                                            "fontWeight": "600"
+                                    }
+                            ],
+                            "body-md": [
+                                    "16px",
+                                    {
+                                            "lineHeight": "26px",
+                                            "fontWeight": "400"
+                                    }
+                            ],
+                            "headline-lg": [
+                                    "48px",
+                                    {
+                                            "lineHeight": "56px",
+                                            "letterSpacing": "-0.01em",
+                                            "fontWeight": "700"
+                                    }
+                            ],
+                            "display-hero": [
+                                    "72px",
+                                    {
+                                            "lineHeight": "80px",
+                                            "letterSpacing": "-0.02em",
+                                            "fontWeight": "800"
+                                    }
+                            ]
+                    }
+            },
+                },
+        }
+    </script>
+<style>
+        .blueprint-bg {
+            background-image: 
+                linear-gradient(rgba(26, 54, 104, 0.05) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(26, 54, 104, 0.05) 1px, transparent 1px);
+            background-size: 24px 24px;
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background font-body-md">
+<!-- Top Navigation Bar -->
+<nav class="bg-surface/90 dark:bg-primary/90 backdrop-blur-md text-deep-navy dark:text-primary-fixed font-label-caps text-label-caps uppercase tracking-widest fixed top-0 w-full z-50 border-b border-slate-gray/10 dark:border-outline-variant/10">
+<div class="flex justify-between items-center h-20 px-gutter max-w-max-width-desktop mx-auto">
+<div class="flex items-center gap-4">
+<img alt="DIWAN Logo" class="h-8" src="https://lh3.googleusercontent.com/aida/AEtjO1XqYGsw3Le-ZQ-n1yvZZQ5PrIc-wI5HjNm3EFK1eNDNSdEuk2IL2Fu20Sus28AgJ9ubYMLhR8RiOI643r7FoA5EvBt9j_UYSHAXmpdXwDp_u5OzEHTXfVt-jddyLxpT1d7KLxwWiO8Dx-vuNjn3TIOWYOuGiuwHcdTj7g7fEcxhie8Tm9IEcqU0ZevnWNvOzRtFWGIMkPlt2B66fYpH2ZEVGycd8t3zCQDSYCzlRPQVsNvXUq56kMm6DQ"/>
+</div>
+<div class="hidden md:flex items-center gap-8">
+<a class="text-deep-navy dark:text-inverse-on-surface hover:text-technical-amber transition-colors active:opacity-80 transition-opacity" href="#">Business Arms</a>
+<a class="text-deep-navy dark:text-inverse-on-surface hover:text-technical-amber transition-colors active:opacity-80 transition-opacity" href="#">Technology Domains</a>
+<a class="text-deep-navy dark:text-inverse-on-surface hover:text-technical-amber transition-colors active:opacity-80 transition-opacity" href="#">The Journey</a>
+<a class="text-deep-navy dark:text-inverse-on-surface hover:text-technical-amber transition-colors active:opacity-80 transition-opacity" href="#">Consultations</a>
+<a class="text-deep-navy dark:text-inverse-on-surface hover:text-technical-amber transition-colors active:opacity-80 transition-opacity" href="#">About Us</a>
+</div>
+<div class="flex items-center gap-4">
+<a class="hidden md:inline-flex items-center justify-center bg-technical-amber text-ink-black px-6 py-3 rounded hover:bg-secondary-container transition-colors font-label-caps text-label-caps uppercase tracking-widest" href="#">Start a Project</a>
+<button class="md:hidden flex items-center justify-center p-2 text-deep-navy">
+<span class="material-symbols-outlined" data-icon="menu">menu</span>
+</button>
+</div>
+</div>
+</nav>
+<!-- Hero Section -->
+<section class="pt-32 pb-section-gap-lg px-gutter max-w-max-width-desktop mx-auto grid grid-cols-1 md:grid-cols-12 gap-gutter items-center min-h-[80vh]">
+<div class="md:col-span-7 space-y-6 z-10">
+<p class="font-label-caps text-label-caps text-technical-amber uppercase tracking-widest">Science. Knowledge. Technology.</p>
+<h1 class="font-display-hero text-display-hero text-deep-navy">From Knowledge to Technology. <br/><span class="text-slate-gray">From Technology to Industry.</span></h1>
+<p class="font-body-lg text-body-lg text-slate-gray max-w-2xl">DIWAN connects engineering knowledge, advanced technologies, and manufacturing capability to develop practical solutions for research, industry, and technical applications in Saudi Arabia.</p>
+<div class="flex flex-wrap gap-4 pt-4">
+<a class="inline-flex items-center justify-center bg-technical-amber text-ink-black px-8 py-4 rounded hover:bg-secondary-container transition-colors font-label-caps text-label-caps uppercase tracking-widest" href="#">Explore Our Business Arms</a>
+<a class="inline-flex items-center justify-center border border-deep-navy text-deep-navy px-8 py-4 rounded hover:bg-deep-navy hover:text-on-primary transition-colors font-label-caps text-label-caps uppercase tracking-widest" href="#">Start a Project with DIWAN</a>
+</div>
+</div>
+<div class="md:col-span-5 relative h-full min-h-[400px] mt-8 md:mt-0">
+<div class="absolute inset-0 bg-gradient-to-tr from-surface-container to-surface rounded-xl border border-slate-gray/10 overflow-hidden shadow-sm">
+<div class="absolute inset-0 blueprint-bg opacity-50 mix-blend-multiply"></div>
+<img class="absolute inset-0 w-full h-full object-cover mix-blend-overlay opacity-80" data-alt="A highly detailed and professional photograph of a modern, brightly lit laboratory setting featuring stainless steel industrial reactors and complex glass tubing setups. The mood is precise, clinical, and technologically advanced, reflecting high-end chemical engineering. Soft, diffuse white lighting highlights the reflective surfaces of the equipment. A technician in a pristine white lab coat and blue gloves is partially visible, operating a digital control panel." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCrpMAMlJHHUj2FATmHdjzZBg0l8JxvEmCTAvb0V3VF4CBDRkWMhLNfVI-qqTLsQzW0kFyoJK6IyhYRtMb__bW9Id9B6FaFHkPObh5eo2V--BSxIpaJJ1T-O55Z4B8WdOADxJ8asFNR7H-G9UTOh-6Fk02dxP-SBDG3_c8xUv3v_6fz6WrlQvAe__mk_LhimhbXWwXo4qn4b5bFDD7pD7G82Aa1cmu8TOMoKAgBOUdE-KbyIhWhjRqt"/>
+</div>
+<!-- Floating Stats Card -->
+<div class="absolute -bottom-8 -left-8 bg-surface p-6 rounded shadow-lg border border-slate-gray/10 hidden md:block">
+<div class="flex gap-8">
+<div>
+<p class="font-stats-display text-stats-display text-deep-navy">3</p>
+<p class="font-label-caps text-label-caps text-slate-gray mt-2">Integrated Arms</p>
+</div>
+<div>
+<p class="font-stats-display text-stats-display text-technical-amber">81+</p>
+<p class="font-label-caps text-label-caps text-slate-gray mt-2">Tech Categories</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Business Arms Section (Bento Grid) -->
+<section class="py-section-gap-lg px-gutter bg-surface-container-low blueprint-bg">
+<div class="max-w-max-width-desktop mx-auto">
+<div class="mb-12">
+<p class="font-label-caps text-label-caps text-technical-amber uppercase tracking-widest mb-4">One Group</p>
+<h2 class="font-headline-lg text-headline-lg text-deep-navy">One Integrated Saudi Technology Ecosystem</h2>
+<p class="font-body-lg text-body-lg text-slate-gray max-w-3xl mt-4">DIWAN supports the full journey from an initial idea and engineering study to technology selection, implementation, manufacturing, and localization.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-12 gap-6 auto-rows-[300px]">
+<!-- Arm 1: Engineering & Tech -->
+<div class="md:col-span-8 bg-surface rounded-xl border border-slate-gray/10 p-8 flex flex-col justify-between hover:border-technical-amber/50 transition-colors group relative overflow-hidden">
+<div class="absolute top-0 right-0 w-64 h-64 bg-primary/5 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2"></div>
+<div class="relative z-10">
+<p class="font-label-caps text-label-caps text-slate-gray uppercase tracking-widest mb-2">Commercial &amp; Technology Arm</p>
+<h3 class="font-headline-md text-headline-md text-deep-navy mb-4">DIWAN Engineering &amp; Technology Company</h3>
+<p class="font-body-md text-body-md text-slate-gray max-w-xl">Provides advanced technologies, equipment, specialized systems, integration, applications support, training, and commercialization for laboratories, research and development, and industrial applications.</p>
+</div>
+<div class="relative z-10 mt-auto">
+<a class="inline-flex items-center gap-2 font-label-caps text-label-caps text-technical-amber uppercase tracking-widest hover:text-secondary-fixed-dim transition-colors group-hover:underline underline-offset-4" href="#">
+                            View this arm
+                            <span class="material-symbols-outlined text-sm" data-icon="arrow_forward">arrow_forward</span>
+</a>
+</div>
+</div>
+<!-- Arm 2: Composites -->
+<div class="md:col-span-4 bg-deep-navy text-on-primary rounded-xl border border-slate-gray/20 p-8 flex flex-col justify-between hover:border-technical-amber transition-colors relative overflow-hidden">
+<div class="absolute inset-0 bg-cover bg-center opacity-20 mix-blend-luminosity" data-alt="A close-up, high-contrast image of advanced composite materials being woven or layered by an automated machine. Dark, sleek carbon fiber textures are prominent, illuminated by a warm, technical amber spotlight indicating precision manufacturing. The mood is industrial, cutting-edge, and robust." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuC2SrJPRnAEBjoRDvfGe72r_8FDtofh3t0dpKsVuUvGlEPGIZaClhpaNC5f-1y__4QwW0BuEU9bevXIfocMTDMCJF_1Zu52UxK9ZdBXCTiXylTJELlhWK66nAHpRSwn6wROc_rC64imEsYHnad21GFiNKlDYdvuys60Hw-_bztMRjcCFk6mA86OSgsawO4NuiRECh2-CDGSnuPXjX7AXFfHwAUXQZCQrEv6ATOP3KtBs0ssYVu4kKMi')"></div>
+<div class="relative z-10">
+<p class="font-label-caps text-label-caps text-tertiary-fixed-dim uppercase tracking-widest mb-2">Industrial &amp; Manufacturing Arm</p>
+<h3 class="font-headline-sm text-headline-sm text-on-primary mb-4">Saudi Advanced Composites</h3>
+<p class="font-body-md text-body-md text-inverse-on-surface opacity-80">Develops advanced materials, engineering products, prototypes, components, manufacturing processes, and localized industrial capabilities in Saudi Arabia.</p>
+</div>
+<div class="relative z-10 mt-6">
+<a class="inline-flex items-center gap-2 font-label-caps text-label-caps text-technical-amber uppercase tracking-widest hover:text-secondary-fixed-dim transition-colors" href="#">
+                            View this arm
+                            <span class="material-symbols-outlined text-sm" data-icon="arrow_forward">arrow_forward</span>
+</a>
+</div>
+</div>
+<!-- Arm 3: Consultations -->
+<div class="md:col-span-12 bg-surface rounded-xl border border-slate-gray/10 p-8 flex flex-col md:flex-row gap-8 items-start md:items-center justify-between hover:border-technical-amber/50 transition-colors group">
+<div class="md:w-2/3">
+<p class="font-label-caps text-label-caps text-slate-gray uppercase tracking-widest mb-2">Engineering &amp; Consulting Arm</p>
+<h3 class="font-headline-sm text-headline-sm text-deep-navy mb-2">Diwan of Excellence Engineering Consultations</h3>
+<p class="font-body-md text-body-md text-slate-gray">Provides chemical engineering, materials consulting, technical studies, process development, feasibility work, technical evaluation, and engineering support for research and industrial projects.</p>
+</div>
+<div>
+<a class="inline-flex items-center justify-center border-2 border-deep-navy text-deep-navy px-6 py-3 rounded hover:bg-deep-navy hover:text-on-primary transition-colors font-label-caps text-label-caps uppercase tracking-widest whitespace-nowrap" href="#">
+                            View this arm
+                        </a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="bg-deep-navy dark:bg-tertiary-container text-on-primary dark:text-on-tertiary-container font-body-md text-body-md w-full mt-section-gap-lg border-t border-slate-gray/20">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-8 py-section-gap-sm px-gutter max-w-max-width-desktop mx-auto">
+<div class="col-span-1 md:col-span-2">
+<h2 class="font-headline-sm text-headline-sm text-technical-amber mb-4">DIWAN</h2>
+<p class="text-surface-variant max-w-md">Connecting materials development, advanced technologies, manufacturing and engineering consultancy into one integrated value chain.</p>
+</div>
+<div>
+<h4 class="font-label-caps text-label-caps text-surface-variant uppercase tracking-widest mb-4">Business Arms</h4>
+<ul class="space-y-2">
+<li><a class="text-surface-variant dark:text-tertiary-fixed-dim hover:text-technical-amber transition-all duration-300 underline-offset-4 hover:underline" href="#">Engineering &amp; Tech</a></li>
+<li><a class="text-surface-variant dark:text-tertiary-fixed-dim hover:text-technical-amber transition-all duration-300 underline-offset-4 hover:underline" href="#">Advanced Composites</a></li>
+<li><a class="text-surface-variant dark:text-tertiary-fixed-dim hover:text-technical-amber transition-all duration-300 underline-offset-4 hover:underline" href="#">Consultations</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-label-caps text-label-caps text-surface-variant uppercase tracking-widest mb-4">Group Info</h4>
+<ul class="space-y-2">
+<li><a class="text-surface-variant dark:text-tertiary-fixed-dim hover:text-technical-amber transition-all duration-300 underline-offset-4 hover:underline" href="#">Contact Us</a></li>
+<li><a class="text-surface-variant dark:text-tertiary-fixed-dim hover:text-technical-amber transition-all duration-300 underline-offset-4 hover:underline" href="#">Privacy Policy</a></li>
+<li><a class="text-surface-variant dark:text-tertiary-fixed-dim hover:text-technical-amber transition-all duration-300 underline-offset-4 hover:underline" href="#">Careers</a></li>
+</ul>
+</div>
+</div>
+<div class="border-t border-slate-gray/20 py-6 px-gutter text-center text-sm text-surface-variant/60">
+            © 2024 DIWAN Group. All rights reserved. Precision Engineering for Saudi Vision 2030.
+        </div>
+</footer>
+</body></html>

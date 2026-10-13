@@ -1,0 +1,156 @@
+[
+  {
+    "id": "715f065349d44c309d9068b6ee6828df",
+    "assetId": "715f065349d44c309d9068b6ee6828df",
+    "data": {
+      "designSystem": {
+        "displayName": "Technical Industrial Excellence",
+        "styleGuidelines": "## Brand & Style\n\nThe design system is rooted in an **engineering-focused aesthetic** that emphasizes precision, technical authority, and industrial localization. It balances the legacy of a \"Science-to-Industry\" mission with a modernized, forward-looking visual language.\n\nThe personality is **authoritative and modular**, reflecting a \"Process-first\" philosophy. The UI should evoke a sense of high-trust, reliability, and expertise in technology and manufacturing.\n\nThe design style combines **Minimalism** with a **Corporate/Modern** framework. It utilizes high-contrast typography, structural grid systems, and technical accents to differentiate business arms while maintaining a unified, integrated ecosystem. Visuals should prioritize clarity, leveraging generous whitespace and subtle blueprints or grid patterns to hint at engineering precision without cluttering the user interface.\n\n## Layout & Spacing\n\nThe layout is built on a **12-column fixed grid** system for desktop, ensuring content remains structured and authoritative. \n\n- **Grid:** A 12-column grid with 24px gutters. Elements should align to column starts and ends to maintain a rigid, \"engineered\" feel.\n- **Section Padding:** Use generous vertical spacing (`section-gap-lg`) between major content blocks like \"One Integrated Saudi Technology Ecosystem\" and \"The Journey.\" \n- **Mobile Adaptivity:** On mobile, the grid collapses to a single column with 16px margins. Headlines scale down significantly to maintain hierarchy without overflowing the viewport.\n- **Rhythm:** An 8px base unit governs all internal component spacing (padding, gaps between labels and text).\n\n## Elevation & Depth\n\nTo maintain a sophisticated, technical look, the system avoids heavy drop shadows. Depth is conveyed through **Tonal Layers** and **Low-contrast Outlines**.\n\n- **Surface Levels:** Use very light gray backgrounds (`neutral_color_hex`) to differentiate sections, creating \"bands\" of content.\n- **Borders:** Instead of shadows, cards use thin, 1px borders in `slate-gray` at low opacity (15-20%) or \"ghost\" borders that only become prominent on hover.\n- **Technical Overlays:** Subtle, semi-transparent overlays (Glassmorphism) can be used for navigation bars to keep the underlying grid pattern visible while scrolling.\n- **Active States:** Depth is communicated by color shifts (e.g., a button filling with color) rather than physical extrusion.\n\n## Components\n\n### Buttons\n- **Primary:** Solid `Technical Amber` fill with `Ink Black` text. Sharp/Soft corners.\n- **Secondary/Ghost:** `Deep Navy` or `Slate Gray` outline with transparent background. Used for \"Start a Project\" or \"Browse Products.\"\n- **Tertiary:** Text-only with a subtle underline or right-arrow icon for \"Read More\" links.\n\n### Cards (Business Arms / Categories)\n- **Structure:** 1px low-opacity border, ample internal padding (32px), and clear typography hierarchy. \n- **Interaction:** On hover, the border color shifts to `Technical Amber` or the background gains a very subtle tint.\n\n### Lists & Steps (The Journey)\n- Use numbered markers in `Technical Amber`. \n- Horizontal flow on desktop with connecting lines; vertical flow on mobile.\n- Steps should feel like a process diagram or blueprint.\n\n### Data Displays (Stats Bar)\n- Large, bold numbers followed by `label-caps` descriptions. \n- Use the 12-column grid to distribute stats evenly (e.g., 4 stats spanning 3 columns each).\n\n### Input Fields\n- Understated design with 1px `slate-gray` borders. \n- Focus state uses a `Deep Navy` border and a subtle 2px glow of the same color.",
+        "theme": {
+          "bodyFont": "INTER",
+          "bodyFontFamily": "Inter",
+          "colorMode": "LIGHT",
+          "colorVariant": "FIDELITY",
+          "customColor": "#1a3668",
+          "designMd": "---\nname: Technical Industrial Excellence\ncolors:\n  surface: '#f7fafc'\n  surface-dim: '#d7dadc'\n  surface-bright: '#f7fafc'\n  surface-container-lowest: '#ffffff'\n  surface-container-low: '#f1f4f6'\n  surface-container: '#ebeef0'\n  surface-container-high: '#e5e9eb'\n  surface-container-highest: '#e0e3e5'\n  on-surface: '#181c1e'\n  on-surface-variant: '#44474f'\n  inverse-surface: '#2d3133'\n  inverse-on-surface: '#eef1f3'\n  outline: '#747780'\n  outline-variant: '#c4c6d0'\n  surface-tint: '#445e92'\n  primary: '#00204f'\n  on-primary: '#ffffff'\n  primary-container: '#1a3668'\n  on-primary-container: '#87a0d9'\n  inverse-primary: '#aec6ff'\n  secondary: '#7f5700'\n  on-secondary: '#ffffff'\n  secondary-container: '#feb316'\n  on-secondary-container: '#6a4800'\n  tertiary: '#172333'\n  on-tertiary: '#ffffff'\n  tertiary-container: '#2d384a'\n  on-tertiary-container: '#96a1b7'\n  error: '#ba1a1a'\n  on-error: '#ffffff'\n  error-container: '#ffdad6'\n  on-error-container: '#93000a'\n  primary-fixed: '#d8e2ff'\n  primary-fixed-dim: '#aec6ff'\n  on-primary-fixed: '#001a42'\n  on-primary-fixed-variant: '#2c4678'\n  secondary-fixed: '#ffdead'\n  secondary-fixed-dim: '#ffba3b'\n  on-secondary-fixed: '#281900'\n  on-secondary-fixed-variant: '#604100'\n  tertiary-fixed: '#d8e3fa'\n  tertiary-fixed-dim: '#bcc7dd'\n  on-tertiary-fixed: '#111c2c'\n  on-tertiary-fixed-variant: '#3c475a'\n  background: '#f7fafc'\n  on-background: '#181c1e'\n  surface-variant: '#e0e3e5'\n  deep-navy: '#1A3668'\n  technical-amber: '#F2A900'\n  slate-gray: '#4A5568'\n  blueprint-grid: rgba(26, 54, 104, 0.05)\n  ink-black: '#0F172A'\ntypography:\n  display-hero:\n    fontFamily: Hanken Grotesk\n    fontSize: 72px\n    fontWeight: '800'\n    lineHeight: 80px\n    letterSpacing: -0.02em\n  headline-lg:\n    fontFamily: Hanken Grotesk\n    fontSize: 48px\n    fontWeight: '700'\n    lineHeight: 56px\n    letterSpacing: -0.01em\n  headline-lg-mobile:\n    fontFamily: Hanken Grotesk\n    fontSize: 32px\n    fontWeight: '700'\n    lineHeight: 40px\n  headline-md:\n    fontFamily: Hanken Grotesk\n    fontSize: 32px\n    fontWeight: '600'\n    lineHeight: 40px\n  headline-sm:\n    fontFamily: Hanken Grotesk\n    fontSize: 24px\n    fontWeight: '600'\n    lineHeight: 32px\n  body-lg:\n    fontFamily: Inter\n    fontSize: 18px\n    fontWeight: '400'\n    lineHeight: 30px\n  body-md:\n    fontFamily: Inter\n    fontSize: 16px\n    fontWeight: '400'\n    lineHeight: 26px\n  label-caps:\n    fontFamily: Inter\n    fontSize: 12px\n    fontWeight: '700'\n    lineHeight: 16px\n    letterSpacing: 0.1em\n  stats-display:\n    fontFamily: Hanken Grotesk\n    fontSize: 56px\n    fontWeight: '800'\n    lineHeight: '1'\n    letterSpacing: -0.03em\nrounded:\n  sm: 0.125rem\n  DEFAULT: 0.25rem\n  md: 0.375rem\n  lg: 0.5rem\n  xl: 0.75rem\n  full: 9999px\nspacing:\n  base: 8px\n  section-gap-lg: 120px\n  section-gap-sm: 64px\n  gutter: 24px\n  margin-container: auto\n  max-width-desktop: 1280px\n---\n\n## Brand & Style\n\nThe design system is rooted in an **engineering-focused aesthetic** that emphasizes precision, technical authority, and industrial localization. It balances the legacy of a \"Science-to-Industry\" mission with a modernized, forward-looking visual language.\n\nThe personality is **authoritative and modular**, reflecting a \"Process-first\" philosophy. The UI should evoke a sense of high-trust, reliability, and expertise in technology and manufacturing.\n\nThe design style combines **Minimalism** with a **Corporate/Modern** framework. It utilizes high-contrast typography, structural grid systems, and technical accents to differentiate business arms while maintaining a unified, integrated ecosystem. Visuals should prioritize clarity, leveraging generous whitespace and subtle blueprints or grid patterns to hint at engineering precision without cluttering the user interface.\n\n## Colors\n\nThe palette is anchored by **Deep Navy**, representing stability and corporate legacy. **Technical Amber** is used sparingly as a high-impact accent color for primary actions, critical data highlights, and iconography to draw the eye to \"Business Arms\" and \"The Journey\" milestones.\n\n- **Primary (Deep Navy):** Used for navigation, primary headings, and high-importance backgrounds.\n- **Secondary (Technical Amber):** Used for primary CTAs and quantifying impact (stats).\n- **Tertiary (Slate Gray):** Used for secondary text, metadata, and supporting graphic elements.\n- **Neutral:** A cool-toned off-white is used for section backgrounds to maintain a clean, airy feel, while `ink-black` is reserved for body text to ensure maximum legibility.\n\nA subtle `blueprint-grid` color is used for background patterns to reinforce the engineering narrative.\n\n## Typography\n\nThis design system uses a dual-sans-serif approach to maximize technical clarity. **Hanken Grotesk** is chosen for display and headlines for its sharp, contemporary, and engineered feel. **Inter** is used for body and labels to provide institutional reliability and readability.\n\n- **Headlines:** Use tight letter-spacing for large display text to create a high-impact, professional aesthetic. \n- **Eyebrow Text:** Always use the `label-caps` style to categorize sections (e.g., \"THE JOURNEY\").\n- **Large Numbers:** For quantifying impact (e.g., \"81+ Categories\"), use the `stats-display` role in Technical Amber to create visual anchors.\n- **Legibility:** Maintain a generous line-height for body copy (1.5x - 1.6x) to handle technical descriptions comfortably.\n\n## Layout & Spacing\n\nThe layout is built on a **12-column fixed grid** system for desktop, ensuring content remains structured and authoritative. \n\n- **Grid:** A 12-column grid with 24px gutters. Elements should align to column starts and ends to maintain a rigid, \"engineered\" feel.\n- **Section Padding:** Use generous vertical spacing (`section-gap-lg`) between major content blocks like \"One Integrated Saudi Technology Ecosystem\" and \"The Journey.\" \n- **Mobile Adaptivity:** On mobile, the grid collapses to a single column with 16px margins. Headlines scale down significantly to maintain hierarchy without overflowing the viewport.\n- **Rhythm:** An 8px base unit governs all internal component spacing (padding, gaps between labels and text).\n\n## Elevation & Depth\n\nTo maintain a sophisticated, technical look, the system avoids heavy drop shadows. Depth is conveyed through **Tonal Layers** and **Low-contrast Outlines**.\n\n- **Surface Levels:** Use very light gray backgrounds (`neutral_color_hex`) to differentiate sections, creating \"bands\" of content.\n- **Borders:** Instead of shadows, cards use thin, 1px borders in `slate-gray` at low opacity (15-20%) or \"ghost\" borders that only become prominent on hover.\n- **Technical Overlays:** Subtle, semi-transparent overlays (Glassmorphism) can be used for navigation bars to keep the underlying grid pattern visible while scrolling.\n- **Active States:** Depth is communicated by color shifts (e.g., a button filling with color) rather than physical extrusion.\n\n## Shapes\n\nThe shape language is **Soft (0.25rem)**. This slight rounding provides a modern touch while maintaining the serious, rigid geometry expected in engineering and manufacturing sectors.\n\n- **Standard Elements:** Buttons, input fields, and small cards use the base 4px (0.25rem) radius.\n- **Large Components:** Hero images or major section containers can use `rounded-lg` (8px) for a slightly smoother transition.\n- **Icons:** Should be monolinear and geometric, following the same 4px corner logic where applicable.\n\n## Components\n\n### Buttons\n- **Primary:** Solid `Technical Amber` fill with `Ink Black` text. Sharp/Soft corners.\n- **Secondary/Ghost:** `Deep Navy` or `Slate Gray` outline with transparent background. Used for \"Start a Project\" or \"Browse Products.\"\n- **Tertiary:** Text-only with a subtle underline or right-arrow icon for \"Read More\" links.\n\n### Cards (Business Arms / Categories)\n- **Structure:** 1px low-opacity border, ample internal padding (32px), and clear typography hierarchy. \n- **Interaction:** On hover, the border color shifts to `Technical Amber` or the background gains a very subtle tint.\n\n### Lists & Steps (The Journey)\n- Use numbered markers in `Technical Amber`. \n- Horizontal flow on desktop with connecting lines; vertical flow on mobile.\n- Steps should feel like a process diagram or blueprint.\n\n### Data Displays (Stats Bar)\n- Large, bold numbers followed by `label-caps` descriptions. \n- Use the 12-column grid to distribute stats evenly (e.g., 4 stats spanning 3 columns each).\n\n### Input Fields\n- Understated design with 1px `slate-gray` borders. \n- Focus state uses a `Deep Navy` border and a subtle 2px glow of the same color.",
+          "font": "HANKEN_GROTESK",
+          "headlineFont": "HANKEN_GROTESK",
+          "headlineFontFamily": "Hanken Grotesk",
+          "labelFont": "INTER",
+          "labelFontFamily": "Inter",
+          "namedColors": {
+            "background": "#f7fafc",
+            "blueprint-grid": "rgba(26, 54, 104, 0.05)",
+            "deep-navy": "#1A3668",
+            "error": "#ba1a1a",
+            "error_container": "#ffdad6",
+            "ink-black": "#0F172A",
+            "inverse_on_surface": "#eef1f3",
+            "inverse_primary": "#aec6ff",
+            "inverse_surface": "#2d3133",
+            "on_background": "#181c1e",
+            "on_error": "#ffffff",
+            "on_error_container": "#93000a",
+            "on_primary": "#ffffff",
+            "on_primary_container": "#87a0d9",
+            "on_primary_fixed": "#001a42",
+            "on_primary_fixed_variant": "#2c4678",
+            "on_secondary": "#ffffff",
+            "on_secondary_container": "#6a4800",
+            "on_secondary_fixed": "#281900",
+            "on_secondary_fixed_variant": "#604100",
+            "on_surface": "#181c1e",
+            "on_surface_variant": "#44474f",
+            "on_tertiary": "#ffffff",
+            "on_tertiary_container": "#96a1b7",
+            "on_tertiary_fixed": "#111c2c",
+            "on_tertiary_fixed_variant": "#3c475a",
+            "outline": "#747780",
+            "outline_variant": "#c4c6d0",
+            "primary": "#00204f",
+            "primary_container": "#1a3668",
+            "primary_fixed": "#d8e2ff",
+            "primary_fixed_dim": "#aec6ff",
+            "secondary": "#7f5700",
+            "secondary_container": "#feb316",
+            "secondary_fixed": "#ffdead",
+            "secondary_fixed_dim": "#ffba3b",
+            "slate-gray": "#4A5568",
+            "surface": "#f7fafc",
+            "surface_bright": "#f7fafc",
+            "surface_container": "#ebeef0",
+            "surface_container_high": "#e5e9eb",
+            "surface_container_highest": "#e0e3e5",
+            "surface_container_low": "#f1f4f6",
+            "surface_container_lowest": "#ffffff",
+            "surface_dim": "#d7dadc",
+            "surface_tint": "#445e92",
+            "surface_variant": "#e0e3e5",
+            "technical-amber": "#F2A900",
+            "tertiary": "#172333",
+            "tertiary_container": "#2d384a",
+            "tertiary_fixed": "#d8e3fa",
+            "tertiary_fixed_dim": "#bcc7dd"
+          },
+          "overrideNeutralColor": "#f7fafc",
+          "overridePrimaryColor": "#1a3668",
+          "overrideSecondaryColor": "#f2a900",
+          "overrideTertiaryColor": "#4a5568",
+          "roundness": "ROUND_FOUR",
+          "spacing": {
+            "base": "8px",
+            "gutter": "24px",
+            "margin-container": "auto",
+            "max-width-desktop": "1280px",
+            "section-gap-lg": "120px",
+            "section-gap-sm": "64px"
+          },
+          "spacingScale": 2,
+          "typography": {
+            "body-lg": {
+              "fontFamily": "Inter",
+              "fontSize": "18px",
+              "fontWeight": "400",
+              "lineHeight": "30px"
+            },
+            "body-md": {
+              "fontFamily": "Inter",
+              "fontSize": "16px",
+              "fontWeight": "400",
+              "lineHeight": "26px"
+            },
+            "display-hero": {
+              "fontFamily": "Hanken Grotesk",
+              "fontSize": "72px",
+              "fontWeight": "800",
+              "letterSpacing": "-0.02em",
+              "lineHeight": "80px"
+            },
+            "headline-lg": {
+              "fontFamily": "Hanken Grotesk",
+              "fontSize": "48px",
+              "fontWeight": "700",
+              "letterSpacing": "-0.01em",
+              "lineHeight": "56px"
+            },
+            "headline-lg-mobile": {
+              "fontFamily": "Hanken Grotesk",
+              "fontSize": "32px",
+              "fontWeight": "700",
+              "lineHeight": "40px"
+            },
+            "headline-md": {
+              "fontFamily": "Hanken Grotesk",
+              "fontSize": "32px",
+              "fontWeight": "600",
+              "lineHeight": "40px"
+            },
+            "headline-sm": {
+              "fontFamily": "Hanken Grotesk",
+              "fontSize": "24px",
+              "fontWeight": "600",
+              "lineHeight": "32px"
+            },
+            "label-caps": {
+              "fontFamily": "Inter",
+              "fontSize": "12px",
+              "fontWeight": "700",
+              "letterSpacing": "0.1em",
+              "lineHeight": "16px"
+            },
+            "stats-display": {
+              "fontFamily": "Hanken Grotesk",
+              "fontSize": "56px",
+              "fontWeight": "800",
+              "letterSpacing": "-0.03em",
+              "lineHeight": "1"
+            }
+          }
+        }
+      },
+      "name": "assets/715f065349d44c309d9068b6ee6828df",
+      "version": "1",
+      "projectId": "2256533212898016551"
+    }
+  }
+]
